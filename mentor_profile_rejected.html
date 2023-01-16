@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            }
+            img{
+                display: block;
+                height: 25%;
+                width: 25%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .profile-container {
+                margin: 0 auto;
+                width: 800px;
+                text-align: left;
+            }
+            .profile-child h2 {
+                margin-bottom: 10px;
+            }
+            .profile-child .field {
+                display: flex;
+                margin-bottom: 10px;
+            }
+            .profile-child .field label {
+                width: 150px;
+                font-weight: bold;
+                margin-right: 20px;
+            }
+            th,td {
+                border:1px solid black;
+                border-color: black;
+            }
+            #slot{
+                border-radius: 10%;
+            }
+            /* table {
+                margin-left: auto;
+                margin-right: auto;
+            } */
+            th, td {
+                border: 1px solid #ccc;
+                padding: 12px;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            button{
+                border:1px solid #ccc;
+                background-color: white;
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: #ccc;
+            }
+            .free{
+                background-color: #46ae45;
+            }
+            .full{
+                background-color: #be5551;
+            }
+            .request{
+                background-color: #be9151;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1>mentor123 - Mentor</h1>
+        <img src="profile.jpeg" alt="Profile picture">
+        <div class="profile-container">
+            <div class="profile-child">
+                <h2>Personal Information</h2>
+                <div class="field">
+                <label>User ID:</label>
+                <span>mentor123</span>
+                </div>
+                <div class="field">
+                <label>Name:</label>
+                <span>Mike Mike</span>
+                </div>
+                <div class="field">
+                <label>Address:</label>
+                <span>abc</span>
+                </div>
+                <div class="field">
+                <label>Country:</label>
+                <span>Netherlands</span>
+                </div>
+                <div class="field">
+                <label>ZIP Code:</label>
+                <span>12345</span>
+                </div>
+                <div class="field">
+                <label>Email:</label>
+                <span>mike@example.com</span>
+                </div>
+                <div class="field">
+                <label>Sex:</label>
+                <span>Male</span>
+                </div>
+                <div class="field">
+                <label>Language:</label>
+                <span>Dutch</span>
+                </div>
+                <div class="field">
+                <label>About/Bio:</label>
+                <span>I am data analyst working at XY.</span>
+                </div>
+                <div class="field">
+                <label>Company:</label>
+                <span>XY</span>
+                </div>
+                <div class="field">
+                <label>Job:</label>
+                <span>Data Analyst</span>
+                </div>
+                <div class="field">
+                <label>Skills:</label>
+                <span>Object Oriented Programming, Calculus</span>
+                </div>
+            </div>
+            <button>
+                <a href="new_timeslot.html">Add new availability</a>
+            </button>
+            <div class="profile-child">
+                <table>
+                    <thead>
+                        <th colspan="3">
+                            Timetable
+                        </th>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                Date
+                            </th>
+                            <th>
+                                Slot
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">
+                                29/12/2022
+                            </td>
+                            <td id="slot" class="free">
+                                15:00 - 15:30
+                            </td>
+                            <td style="border-color: transparent;">
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="slot" class="full">
+                                15:30 - 16:00
+                            </td>
+                            <td style="border-color: transparent;">
+                                Reserved by Amie
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="slot" class="free">
+                                16:00 - 16:30
+                            </td>
+                            <td style="border-color: transparent;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="slot" class="free">
+                                16:30 - 17:00
+                            </td>
+                            <td style="border-color: transparent;">  
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

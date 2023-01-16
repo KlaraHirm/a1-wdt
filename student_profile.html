@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <title>Student Profile</title>
+    <style>
+
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+        display: inline;
+      }
+      .header-panel {
+        position: relative;
+      }
+      .profile-button {
+        position: absolute;
+        right: 0;
+      }
+      .profile-link {
+        font-size: medium;
+      }
+      img{
+        display: block;
+        height: 25%;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .profile-container {
+        margin: 0 auto;
+        width: 800px;
+        text-align: left;
+      }
+      .profile-child h2 {
+        margin-bottom: 10px;
+      }
+      .profile-child .field {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .profile-child .field label {
+        width: 150px;
+        font-weight: bold;
+        margin-right: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th, td {
+        border: 1px solid #ccc;
+        padding: 12px;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .button {
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: medium;
+      }
+      button{
+        border:1px solid #ccc;
+        background-color: white;
+      }
+      button:hover{
+        cursor: pointer;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-panel">
+      <h1>
+        student123 - Student
+      </h1>
+      <button class="profile-button"><a href="mentor-search.html" class="profile-link">Search for mentor</a></button>
+  </div>
+    <img src="profile.jpeg" alt="Profile picture">
+    <div class="profile-container">
+      <div class="profile-child">
+        <h2>Personal Information</h2>
+        <div class="field">
+          <label>User ID:</label>
+          <span>student123</span>
+        </div>
+        <div class="field">
+          <label>Name:</label>
+          <span>John John</span>
+        </div>
+        <div class="field">
+          <label>Address:</label>
+          <span>abc</span>
+        </div>
+        <div class="field">
+          <label>Country:</label>
+          <span>Netherlands</span>
+        </div>
+        <div class="field">
+          <label>ZIP Code:</label>
+          <span>12345</span>
+        </div>
+        <div class="field">
+          <label>Email:</label>
+          <span>john@example.com</span>
+        </div>
+        <div class="field">
+          <label>Sex:</label>
+          <span>Male</span>
+        </div>
+        <div class="field">
+          <label>Language:</label>
+          <span>Dutch</span>
+        </div>
+        <div class="field">
+          <label>About/Bio:</label>
+          <span>I am a student who is interested in learning more about computer science.</span>
+        </div>
+      </div>
+      <div class="profile-child">
+        <h2>Reserved Mentoring Spots</h2>
+        <table>
+            <tr>
+              <th>Mentor</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Duration</th>
+            </tr>
+            <tr>
+              <td>Mike Mike</td>
+              <td>01/15/2023</td>
+              <td>2:00 PM</td>
+              <td>30 minutes</td>
+            </tr>
+            <tr>
+              <td>Anna Anna</td>
+              <td>01/22/2023</td>
+              <td>3:00 PM</td>
+              <td>30 minutes</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </body>
+  </html>
+  

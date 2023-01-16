@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            a {
+                text-decoration: none;
+                color: black; 
+            }
+            button{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border:1px solid #ccc;
+                background-color: white;
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: #ccc;
+            }
+        </style>
+
+    </head>
+    <body>
+        <form>
+            <label for="fdate">Date:</label>
+            <input type="date" id="fdate" name="fdate" value=""><br>
+
+            <label for="time">Choose from available timeslots:</label>
+            <select name="time" id="time">
+                <option value="1">15:00-15:30</option>
+                <option value="2">15:30-16:00</option>
+                <option value="3">17:00-17:30</option>
+            </select><br>
+            <label>Reason:</label>
+            <input type="text">
+            <button><a href="mentor_search.html">Confirm booking</a></button>
+        </form>
+    </body>
+</html>
